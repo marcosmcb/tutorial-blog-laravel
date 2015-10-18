@@ -4,9 +4,65 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5c6026b96e6fa11a641b51a6ba976f5e",
-    "content-hash": "5bd58fd976f1ee3e9611bc37c006ec46",
+    "hash": "e17634d23a3e490989b77eadc4c7df96",
+    "content-hash": "01de3e4d98dc8efb891a8bd3811ebf98",
     "packages": [
+        {
+            "name": "alfredo-ramos/parsedown-extra-laravel",
+            "version": "0.2.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AlfredoRamos/parsedown-extra-laravel.git",
+                "reference": "9fd453500d615cd7b3eb1f6fe3f05570c925e956"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AlfredoRamos/parsedown-extra-laravel/zipball/9fd453500d615cd7b3eb1f6fe3f05570c925e956",
+                "reference": "9fd453500d615cd7b3eb1f6fe3f05570c925e956",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown-extra": "~0.7",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~3.0"
+            },
+            "suggest": {
+                "mews/purifier": "HTML Purifier wrapper to filter HTML tags in the output."
+            },
+            "type": "package",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AlfredoRamos\\ParsedownExtra\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Alfredo Ramos",
+                    "email": "alfredo.ramos@yandex.com",
+                    "homepage": "https://github.com/AlfredoRamos",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Parsedown Extra package for Laravel 5",
+            "homepage": "https://github.com/AlfredoRamos/parsedown-extra-laravel",
+            "keywords": [
+                "Parsedown Extra",
+                "laravel 5",
+                "markdown extra"
+            ],
+            "time": "2015-05-24 17:23:45"
+        },
         {
             "name": "classpreloader/classpreloader",
             "version": "2.0.0",
@@ -216,6 +272,89 @@
                 "string"
             ],
             "time": "2014-12-20 21:24:13"
+        },
+        {
+            "name": "erusev/parsedown",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown.git",
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "reference": "3ebbd730b5c2cf5ce78bc1bf64071407fc6674b7",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Parsedown": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "Parser for Markdown.",
+            "homepage": "http://parsedown.org",
+            "keywords": [
+                "markdown",
+                "parser"
+            ],
+            "time": "2015-10-04 16:44:32"
+        },
+        {
+            "name": "erusev/parsedown-extra",
+            "version": "0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/erusev/parsedown-extra.git",
+                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/erusev/parsedown-extra/zipball/11a44e076d02ffcc4021713398a60cd73f78b6f5",
+                "reference": "11a44e076d02ffcc4021713398a60cd73f78b6f5",
+                "shasum": ""
+            },
+            "require": {
+                "erusev/parsedown": "~1.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "ParsedownExtra": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Emanuil Rusev",
+                    "email": "hello@erusev.com",
+                    "homepage": "http://erusev.com"
+                }
+            ],
+            "description": "An extension of Parsedown that adds support for Markdown Extra.",
+            "homepage": "https://github.com/erusev/parsedown-extra",
+            "keywords": [
+                "markdown",
+                "markdown extra",
+                "parsedown",
+                "parser"
+            ],
+            "time": "2015-01-25 14:52:34"
         },
         {
             "name": "jakub-onderka/php-console-color",
@@ -790,20 +929,23 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "1.0.5",
+            "version": "1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e"
+                "reference": "df1207683dfbd1399f0fa931a368082a28fed50b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
-                "reference": "f667aa2000a192adfa53332335a2ae0c1cb9ea6e",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/df1207683dfbd1399f0fa931a368082a28fed50b",
+                "reference": "df1207683dfbd1399f0fa931a368082a28fed50b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2.0"
+            },
+            "suggest": {
+                "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
             },
             "type": "library",
             "autoload": {
@@ -828,7 +970,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2015-10-08 12:57:25"
+            "time": "2015-10-16 14:10:15"
         },
         {
             "name": "psr/log",
@@ -2417,16 +2559,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "4.8.13",
+            "version": "4.8.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "be067d6105286b74272facefc2697038f8807b77"
+                "reference": "b4900675926860bef091644849305399b986efa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/be067d6105286b74272facefc2697038f8807b77",
-                "reference": "be067d6105286b74272facefc2697038f8807b77",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/b4900675926860bef091644849305399b986efa2",
+                "reference": "b4900675926860bef091644849305399b986efa2",
                 "shasum": ""
             },
             "require": {
@@ -2485,7 +2627,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2015-10-14 13:49:40"
+            "time": "2015-10-17 15:03:30"
         },
         {
             "name": "phpunit/phpunit-mock-objects",

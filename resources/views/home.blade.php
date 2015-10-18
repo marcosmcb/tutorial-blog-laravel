@@ -1,9 +1,17 @@
 @extends('templates.default')
 
 @section('content')
-	<article>
-		<h2>This is the article title</h2>
-		<p>This is some body</p>
-		<a href="">Read More &rarr;</a>
-	</article>
+
+	@if($posts->count())
+		@foreach($posts as $post)
+			<article>
+				
+				<h2> {!! Markdown::parse($post->title) !!} </h2>
+				<p>  {!! Markdown::parse($post->body) !!} </p>
+				<a href="{{ $post->slug }}">Read More &rarr;</a>
+			</article>
+		@endforeach
+
+	@endif
+	
 @stop
